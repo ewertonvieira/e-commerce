@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+body .container {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    /*Definir tamanho para centralizar a caixa*/
+    width: 100%;
+    height: 100vh;
+    background-color: #3C3CDF;
+}
+
+form {
+    border-radius: 10px;
+    background-color: white;
+    height: 400px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.name-email-box .input-name {
+    width: 180px;
+    height: 21px;
+    border-radius: 10px;
+    text-indent: 7px;
+}
+
+.name-email-box .input-date {
+    width: 110px;
+    height: 21px;
+    border-radius: 10px;
+    text-indent: 4px;
+}
+
+.email-box input{
+    width: 298px;
+    height: 21px;
+    border-radius: 10px;
+    text-indent: 7px;
+}
+
+.password-box input{
+    width: 298px;
+    height: 21px;
+    border-radius: 10px;
+    text-indent: 7px;
+}
+
+.password-confirm input{
+    width: 298px;
+    height: 21px;
+    border-radius: 10px;
+    text-indent: 7px;
+}
+
+form button {
+    background-color: #3C3CDF;
+    color: white;
+    width: 100px;
+    height: 31px;
+    border-radius: 7px;
+    font-size: 0.9em;
+}
