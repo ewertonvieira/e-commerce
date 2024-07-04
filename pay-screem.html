@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/pay-screem.css">
+    <title>Pagamento</title>
+</head>
+<body>
+    <article class="top">
+        <section>
+            <div>
+                <h3>Cartão de Crédito</h3>
+            </div>
+            <form action="">
+                <div class="item">
+                    <img src="images/icon/mastercard.png" alt="Mastercard">
+                    <input type="radio" name="payment-method" value="mastercard">
+                </div>
+                <div class="item">
+                    <img src="images/icon/visa.png" alt="Visa">
+                    <input type="radio" name="payment-method" value="visa">
+                </div>
+                <div class="item">
+                    <img src="images/icon/elo.svg" alt="Elo">
+                    <input type="radio" name="payment-method" value="elo">
+                </div>
+                <div class="item">
+                    <img src="images/icon/hipercard.svg" alt="Hipercard">
+                    <input type="radio" name="payment-method" value="hipercard">
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <div>
+                <h3>Debito Online</h3>
+            </div>
+            <form action="">
+                <div class="item">
+                    <img src="images/icon/badesco.png" alt="Bradesco">
+                    <input type="radio" name="payment-method" value="bradesco">
+                </div>
+                <div class="item">
+                    <img src="images/icon/bancodobrasil.png" alt="Banco do Brasil">
+                    <input type="radio" name="payment-method" value="bancodobrasil">
+                </div>
+                <div class="item">
+                    <img src="images/icon/itau.svg" alt="Itaú">
+                    <input type="radio" name="payment-method" value="itau">
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <div>
+                <h3>Boleto ou Pix</h3>
+            </div>
+            <form action="">
+                <div class="item">
+                    <img src="images/icon/icons8-boleto-bankario-48.png" alt="Boleto">
+                    <input type="radio" name="payment-method" value="boleto">
+                </div>
+                <div class="item">
+                    <img src="images/icon/pix-icon.png" alt="Pix">
+                    <input type="radio" name="payment-method" value="pix">
+                </div>
+            </form>
+        </section>
+    </article>
+
+    <script>
+        // Seleciona todos os inputs do tipo radio
+        const radios = document.querySelectorAll('input[type="radio"]');
+
+        // Adiciona um event listener para cada radio
+        radios.forEach(radio => {
+            radio.addEventListener('click', function(event) {
+                // Desmarca todos os radios
+                radios.forEach(r => {
+                    if (r !== event.target) {
+                        r.checked = false;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
